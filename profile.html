@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>प्रोफाइल पृष्ठ</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FAF3E0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Style */
+        .header {
+            background: linear-gradient(to right, #191970, #800080);
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-family: 'Arial', sans-serif;
+        }
+        .header h1 {
+            font-size: 28px;
+            margin: 0;
+            font-family: 'Georgia', serif;
+            letter-spacing: 2px;
+        }
+        .header p {
+            font-size: 18px;
+            margin: 10px 0;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+
+        .profile-wrapper {
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        .profile-card {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            color: #333;
+        }
+
+        .profile-header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #e53946;
+            object-fit: cover;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .profile-header img:hover {
+            transform: scale(1.1);
+            border-color: #d32f2f;
+        }
+
+        .profile-header h2 {
+            font-size: 2.5rem;
+            color: #e53946;
+            margin-top: 20px;
+            font-family: "Playfair Display", serif;
+        }
+
+        .profile-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #e53946;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .profile-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .work-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .work-section li {
+            background: rgba(255, 0, 0, 0.1);
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .work-section li:hover {
+            background: rgba(255, 0, 0, 0.2);
+        }
+
+        button {
+            background: linear-gradient(135deg, #e53946, #c62828);
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            border-radius: 30px;
+            font-size: 16px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, #c62828, #d32f2f);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>सर्जकहरूको कक्ष</h1>
+        <p>आफ्नो दिनलाई अझ राम्रो बनाउनुहोस्!</p>
+    </div>
+
+    <div class="profile-wrapper">
+        <div class="profile-card">
+            <div class="profile-header">
+                <img src="https://www.thefilmnepal.com/uploads/medias/Ramesh-Ranjan-Jha.jpg" alt="Profile Picture">
+                <h2>रमेश रंजन झा</h2>
+            </div>
+            <div class="profile-body">
+                <div class="profile-section">
+                    <h3>साहित्य विधा</h3>
+                    <p>उपन्यासकार लेखन, फिलिम लेखन, हास्य और व्यंग्य</p>
+                </div>
+                <div class="profile-section">
+                    <h3>संपर्क</h3>
+                    <p>ईमेल: Rameshranjan002@gmail.com</p>
+                    <p>फोन: ९४७८७८८८९३</p>
+                </div>
+                <div class="work-section">
+                    <h3>हमर काज</h3>
+                    <ul>
+                        <li><span>फ़ूलबन हरण</span><span class="rating">⭐⭐⭐⭐⭐</span></li>
+                        <li><span>संकर्मन</span><span class="rating">⭐⭐⭐⭐</span></li>
+                        <li><span>रक्त वर्षा</span><span class="rating">⭐⭐⭐⭐⭐</span></li>
+                    </ul>
+                </div>
+                <button>अधिक अन्वेषण करू</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

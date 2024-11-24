@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>पोस्ट विवरण</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FAF3E0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Style */
+        .header {
+            background: linear-gradient(to right, #191970, #800080);
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-family: 'Arial', sans-serif;
+        }
+        .header h1 {
+            font-size: 28px;
+            margin: 0;
+            font-family: 'Georgia', serif;
+            letter-spacing: 2px;
+        }
+        .header p {
+            font-size: 18px;
+            margin: 10px 0;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+
+        .post-container {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .post-header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-header h1 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #191970;
+            margin: 0;
+        }
+
+        .post-content {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            max-height: 600px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+
+        .buy-now-button {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #191970;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .buy-now-button:hover {
+            background-color: #e6b800;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #e55347;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            .post-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .post-header img {
+                margin: 0 0 10px 0;
+            }
+
+            .post-header h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <h1>मिथिला पंचांग पात्रो</h1>
+        <p>आफ्नो दिनलाई अझ राम्रो बनाउनुहोस्!</p>
+    </div>
+
+    <!-- Post Content Section -->
+    <div class="post-container">
+        <!-- Post Header with Link to Profile Page -->
+        <div class="post-header">
+            <!-- Clicking this image will navigate to profile.html -->
+            <a href="profile.html">
+                <img src="https://www.thefilmnepal.com/uploads/medias/Ramesh-Ranjan-Jha.jpg" alt="पोस्ट चित्र" id="post-image">
+            </a>
+            <h1 id="post-title">पोस्ट</h1>
+        </div>
+
+        <!-- Post Content -->
+        <div class="post-content" id="post-content">
+            <!-- Content will be dynamically loaded -->
+            Story behind:   "शिवशक्ति" मिथिला कला के एक महत्वपूर्ण चित्रकारी है, जे में शिव आ शक्ति के संयोग क' रूप में देखावल जायत अछि। एहि चित्रकारी में शिव के शांति आ ध्यान में स्थित रूप आ शक्ति के ऊर्जा आ सृजनात्मक रूप में देखा जाएत अछि। मिथिला कला में शिव आ शक्ति के ई द्वैत के चित्रण बहुते आकर्षक ढंग से होइत अछि।
+ई चित्रकारी खास क' महिला कलाकार मोती कर्ण द्वारा बनाई गेल अछि, जिनका के अपन पारंपरिक कला शैली में शिव आ शक्ति के संयोग क' दर्शावैत अछि। एहि में शिव के मुख सामने देखावल जायत अछि, जबकि शक्ति के पार्श्व दृष्टि में। मोती कर्ण के कला में बारीक रेखाचित्र आ प्राकृतिक रंग के प्रयोग विशेष रूप स' पहिचानल जाइत अछि। ओ अपन कला के माध्यम स' न केवल धार्मिक, बल्कि सामाजिक विषय के सेहो प्रस्तुत करैत छथि।
+मोती कर्ण आ हुनकर परिवारक द्वारा अपन चित्रकला में धार्मिक आ पारंपरिक मिथिला शैली के अद्भुत संगम देखने के लेल भेटैत अछि।
+</div>
+
+        <!-- Buy Now Button -->
+        <a href="#" class="buy-now-button" id="buy-now-link">किन्नुहोस्</a>
+
+        <!-- Back Button -->
+        <a href="newarticle.html" class="back-button">पछाडि जानुहोस्</a>
+    </div>
+</body>
+</html>

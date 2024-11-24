@@ -94,23 +94,85 @@
         .buy-now-button:hover {
             background-color: #e6b800;
         }
-
         .back-button {
-            margin-top: 20px;
-            display: inline-block;
-            background-color: #ff6347;
-            color: white;
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
+    margin-top: 20px;
+    margin-left: 80px; /* Add margin-left to shift the button */
+    display: inline-block;
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #e55347;
+}
+
+        /* More Articles Section */
+        .more-articles-container {
+            margin-top: 40px;
             text-align: center;
         }
 
-        .back-button:hover {
-            background-color: #e55347;
+        .more-articles-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #191970;
+        }
+
+        .article-slider {
+            display: flex;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 10px 0;
+            scroll-snap-type: x mandatory;
+        }
+
+        .article-card {
+            flex: 0 0 auto;
+            width: 200px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 10px;
+            scroll-snap-align: start;
+        }
+
+        .article-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .article-card h3 {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #191970;
+        }
+
+        .article-card p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .article-card a {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #ffcc00;
+            color: #191970;
+            padding: 5px 15px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
         }
 
         /* Mobile adjustments */
@@ -128,6 +190,15 @@
             .post-header h1 {
                 font-size: 20px;
             }
+
+            .more-articles-container {
+                padding: 10px;
+            }
+
+            .article-slider {
+                flex-direction: row;
+                overflow-x: scroll;
+            }
         }
     </style>
 </head>
@@ -142,7 +213,6 @@
     <div class="post-container">
         <!-- Post Header with Link to Profile Page -->
         <div class="post-header">
-            <!-- Clicking this image will navigate to profile.html -->
             <a href="profile.html">
                 <img src="https://www.thefilmnepal.com/uploads/medias/Ramesh-Ranjan-Jha.jpg" alt="पोस्ट चित्र" id="post-image">
             </a>
@@ -151,11 +221,8 @@
 
         <!-- Post Content -->
         <div class="post-content" id="post-content">
-            <!-- Content will be dynamically loaded -->
-            Story behind:   "शिवशक्ति" मिथिला कला के एक महत्वपूर्ण चित्रकारी है, जे में शिव आ शक्ति के संयोग क' रूप में देखावल जायत अछि। एहि चित्रकारी में शिव के शांति आ ध्यान में स्थित रूप आ शक्ति के ऊर्जा आ सृजनात्मक रूप में देखा जाएत अछि। मिथिला कला में शिव आ शक्ति के ई द्वैत के चित्रण बहुते आकर्षक ढंग से होइत अछि।
-ई चित्रकारी खास क' महिला कलाकार मोती कर्ण द्वारा बनाई गेल अछि, जिनका के अपन पारंपरिक कला शैली में शिव आ शक्ति के संयोग क' दर्शावैत अछि। एहि में शिव के मुख सामने देखावल जायत अछि, जबकि शक्ति के पार्श्व दृष्टि में। मोती कर्ण के कला में बारीक रेखाचित्र आ प्राकृतिक रंग के प्रयोग विशेष रूप स' पहिचानल जाइत अछि। ओ अपन कला के माध्यम स' न केवल धार्मिक, बल्कि सामाजिक विषय के सेहो प्रस्तुत करैत छथि।
-मोती कर्ण आ हुनकर परिवारक द्वारा अपन चित्रकला में धार्मिक आ पारंपरिक मिथिला शैली के अद्भुत संगम देखने के लेल भेटैत अछि।
-</div>
+            Story behind: "शिवशक्ति" मिथिला कला के एक महत्वपूर्ण चित्रकारी है, जे में शिव आ शक्ति के संयोग क' रूप में देखावल जायत अछि।...
+        </div>
 
         <!-- Buy Now Button -->
         <a href="#" class="buy-now-button" id="buy-now-link">किन्नुहोस्</a>
@@ -163,5 +230,41 @@
         <!-- Back Button -->
         <a href="newarticle.html" class="back-button">पछाडि जानुहोस्</a>
     </div>
+
+    <!-- More Articles Section -->
+    <div class="more-articles-container">
+        <div class="more-articles-header">अझै थप लेखहरु</div>
+        <div class="article-slider">
+            <!-- Article Card 1 -->
+            <div class="article-card">
+                <img src="rebati.png" alt="Article Image">
+                <h3>लेख १</h3>
+                <p>लेखको छोटो विवरण यहाँ राख्नुहोस्...</p>
+                <a href="newarticle.html">पूरा पढ्नुहोस्</a>
+            </div>
+            <!-- Article Card 2 -->
+            <div class="article-card">
+                <img src="moti.png" alt="Article Image">
+                <h3>लेख २</h3>
+                <p>लेखको छोटो विवरण यहाँ राख्नुहोस्...</p>
+                <a href="newarticle.html">पूरा पढ्नुहोस्</a>
+            </div>
+            <!-- Article Card 3 -->
+            <div class="article-card">
+                <img src="shalini.png" alt="Article Image">
+                <h3>लेख ३</h3>
+                <p>लेखको छोटो विवरण यहाँ राख्नुहोस्...</p>
+                <a href="newarticle.html">पूरा पढ्नुहोस्</a>
+            </div>
+            <!-- Article Card 4 -->
+            <div class="article-card">
+                <img src="fish.png" alt="Article Image">
+                <h3>लेख ४</h3>
+                <p>लेखको छोटो विवरण यहाँ राख्नुहोस्...</p>
+                <a href="newarticle.html">पूरा पढ्नुहोस्</a>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
